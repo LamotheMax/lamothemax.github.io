@@ -1,278 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxime Lamothe | Software engineering research at Polytechnique Montréal</title>
   <meta name="author" content="Maxime Lamothe">
+  <meta name="description" content="Maxime Lamothe is an assistant professor at Polytechnique Montréal and a member of the DORSAL lab. He studies software performance and tracing, LLMs for software engineering, code review and CI, and API evolution.">
+  <meta property="og:title" content="Maxime Lamothe">
+  <meta property="og:description" content="Assistant professor, Polytechnique Montréal. Software performance, tracing, and AI for software engineering. Member of the DORSAL lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lamothemax.github.io/assets/img/max.jpg">
 
-
-  <title>Maxime Lamothe</title>
-
-  <!-- Favicons -->
   <link rel="icon" href="./assets/img/Max.svg">
-  <link href="./assets/img/Max.svg" rel="apple-touch-icon">
+  <link rel="apple-touch-icon" href="./assets/img/Max.svg">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="./assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="./assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="./assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./assets/css/site.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="./assets/img/max.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Maxime Lamothe</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/maxime-lamothe-b3232466/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"></li><!--a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li-->
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#publications"><i class="bx bx-file-blank"></i> <span>Publications</span></a></li>
-          <li><a href="#services"><i class="bx bx-server"></i> Academic Services</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html">Maxime Lamothe</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Pages">
+        <a href="index.html" class="on" aria-current="page">Home</a>
+        <a href="dorsal.html">DORSAL</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Top Section ======= -->
-  <section id="top" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="top-container">
-      <img src="./assets/img/max.jpg" alt="" class="img-fluid rounded-circle">
-      <h1>Maxime Lamothe</h1>
-      <p>I'm <span class="typed" data-typed-items=",a Researcher, a Developer, a Reviewer, an Assistant Professor"></span></p>
-    </div>
-  </section>
-  <!-- End Top -->
+  </header>
 
   <main id="main">
+    <span class="ribbon" aria-hidden="true"></span>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    <section class="hero" id="top">
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="eyebrow">Assistant Professor · Polytechnique Montréal · <a href="dorsal.html">DORSAL lab</a></p>
+          <h1>I study how software behaves when it runs, and how teams keep it healthy as it grows.</h1>
+          <p class="lede">My group works on performance and tracing for large heterogeneous systems, on what LLMs can and cannot do for software engineers, and on the everyday machinery of software teams: code review, continuous integration, and APIs.</p>
+          <p class="hero-actions">
+            <a class="btn primary" href="publications.html">Publications</a>
+            <a class="btn" href="team.html">Team</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=N-SSIvIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </p>
+        </div>
+        <div class="portrait">
+          <img src="./assets/img/max.jpg" width="279" height="279" alt="Portrait of Maxime Lamothe">
+        </div>
+      </div>
 
-        <div class="section-title">
+      <!-- A small trace view: spans over time, with the critical path in red. -->
+      <div class="wrap">
+        <svg class="trace" viewBox="0 0 1100 96" role="img" aria-label="Illustration of an execution trace with its critical path highlighted">
+          <g class="tr-grid">
+            <line x1="0" y1="92" x2="1100" y2="92"/>
+            <line x1="220" y1="0" x2="220" y2="92"/><line x1="440" y1="0" x2="440" y2="92"/>
+            <line x1="660" y1="0" x2="660" y2="92"/><line x1="880" y1="0" x2="880" y2="92"/>
+          </g>
+          <g class="tr-spans">
+            <rect class="s-red"    x="4"   y="6"  width="150" height="14" rx="4"/>
+            <rect class="s-mut"    x="170" y="6"  width="410" height="14" rx="4"/>
+            <rect class="s-red"    x="760" y="6"  width="336" height="14" rx="4"/>
+            <rect class="s-blue"   x="60"  y="30" width="120" height="14" rx="4"/>
+            <rect class="s-red"    x="154" y="30" width="230" height="14" rx="4"/>
+            <rect class="s-blue"   x="600" y="30" width="90"  height="14" rx="4"/>
+            <rect class="s-orange" x="230" y="54" width="100" height="14" rx="4"/>
+            <rect class="s-red"    x="384" y="54" width="240" height="14" rx="4"/>
+            <rect class="s-orange" x="860" y="54" width="140" height="14" rx="4"/>
+            <rect class="s-green"  x="20"  y="78" width="60"  height="10" rx="4"/>
+            <rect class="s-green"  x="440" y="78" width="80"  height="10" rx="4"/>
+            <rect class="s-red"    x="624" y="76" width="136" height="14" rx="4"/>
+            <rect class="s-green"  x="900" y="78" width="50"  height="10" rx="4"/>
+          </g>
+          <path class="tr-path" d="M154 13 V37 M384 37 V61 M624 61 V83 M760 83 V13"/>
+        </svg>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap two-col">
+        <div>
           <h2>About</h2>
-          <p>I am an assistant professor at Polytechnique Montreal (and currently looking for Masters and Ph.D. students). In early 2021 I was a postdoctoral researcher studying software build systems in the <a title="Software REBELs" href="https://rebels.cs.uwaterloo.ca/" target="_blank"><u>Software REBELs Lab</u></a> at the University of Waterloo under the supervision of Prof. Shane McIntosh. My doctoral thesis focused on reducing knowledge gaps between the users and developers of software APIs. I obtained my Ph.D. from Concordia University (2020), M.Eng degree from Concordia University (2017), and my B.Eng at McGill University (2013). My primary research interests lie in empirical software engineering, mining software repositories, software APIs, build systems, software performance, and bug-detection.</p>
-		  
-          <div class="row mt-4">
-          <div class="col-xl" >
-            <h4 class="resume-title">Research Interests</h4>
-            <div class="resume-item pb-0">
-              <p>empirical software engineering, mining software repositories, Software APIs, Software build systems, AI for SE and SE for AI, bug inducing changes, software performance, and software engineering in general.</p>
-	    </div>
-		  </div>
-		  </div>
-		  </div>
+          <p>I am an assistant professor in the Department of Computer Engineering and Software Engineering at Polytechnique Montréal, and one of the professors of the <a href="dorsal.html">DORSAL lab</a>, where I lead the lab's work on heterogeneous and high-performance computing.</p>
+          <p>Most of what I do is empirical: we mine repositories, traces, logs and review histories from real projects, build tools on top of what we learn, and evaluate them with the people who would use them. Recent work covers GPU benchmarking and tracing, root-cause analysis in microservices, LLM agents for refactoring, and how machine-learning frameworks evolve differently from other software.</p>
+          <p>Before joining Polytechnique, I was a postdoctoral researcher in the <a href="https://rebels.cs.uwaterloo.ca/" target="_blank" rel="noopener">Software REBELs lab</a> at the University of Waterloo with Shane McIntosh, studying build systems and code review. My Ph.D. (Concordia University, 2020, with Weiyi Shang) was about closing the knowledge gap between the developers of APIs and the people who use them. I also hold an M.Eng. from Concordia (2017) and a B.Eng. from McGill (2013).</p>
         </div>
-
+        <aside class="callout">
+          <h3>Joining the group</h3>
+          <p>I am looking for motivated M.Sc. and Ph.D. students, in particular for projects on GPU and HPC tracing within DORSAL and on AI-assisted software engineering.</p>
+          <p>Send me your CV, transcripts, and two or three sentences on a paper of ours that you found interesting and why.</p>
+          <a class="btn primary" data-email href="contact.html">Email me</a>
+        </aside>
       </div>
-    </section><!-- End About Section -->
-
-
-
-    <!-- ======= Resume Section ======= -->
-    <section id="publications" class="publications">
-      <div class="container">
-        <div class="section-title">
-          <h2>Publications</h2>
-          <p>Also on <a title="Scholar" href="https://scholar.google.com/citations?user=N-SSIvIAAAAJ&hl=en" target="_blank"><u>Google Scholar</u></a></p>
+    </section>
+    <section class="section home-more">
+      <div class="wrap two-col even">
+        <div class="callout feature">
+          <p class="eyebrow">Active project</p>
+          <h2>DORSAL lab</h2>
+          <p>I am one of the professors of DORSAL, Polytechnique Montréal's lab on the performance and reliability of distributed, cloud and multi-core systems. I supervise its track on heterogeneous and high-performance computing: tracing, profiling and debugging GPU programs at scale.</p>
+          <a class="btn primary" href="dorsal.html">My work in DORSAL</a>
         </div>
-		
-        <div class="row">
-          <div class="col-xl">
-            <h3 class="resume-title">2022</h3>
-            <div class="resume-item pb-0">
-              <h4>Journals</h4>
-			  <p>Studying Logging Practice in Test Code.<br>Haonan Zhang, Yiming Tang, <strong>Maxime Lamothe</strong>, Heng Li, and Weiyi Shang.<br><em>Accepted to: Empirical Software Engineering An International Journal (EMSE)</em> <a title="EMSE_TESTLOGS_Haonan" href="https://users.encs.concordia.ca/~shang/pubs/EMSE_Haonan_2022.pdf" target="_blank"><u>Pre-Print</u></a></p>
-	      <div class="resume-item">
-              <h4>Conferences</h4>
-                 <p>Exploring the Notion of Risk in Code Reviewer Recommendation.<br> Farshad Kazemi, <strong>Maxime Lamothe</strong>, and Shane McIntosh.<br><em>Published in: International Conference on Software Maintenance and Evolution (ICSME) 2022</em>. <a title="ICSME_2022_Kazemi" href="./assets/papers/kazemi_icsme_2022.pdf" target="_blank"><u>Pre-Print</u></a></p>
-                <p>How Does Code Reviewing Feedback Evolve? A Longitudinal Study at Dell EMC.<br> Ruiyin Wen, <strong>Maxime Lamothe</strong>, and Shane McIntosh.<br><em>Published in: International Conference on Software Engineering, Software Engineering In Practice (ICSE-SEIP) 2022</em>. <a title="ICSE_SEIP_2022_wen" href="./assets/papers/rwen_icse_2022.pdf" target="_blank"><u>Pre-Print</u></a></p>
-                <p>Lessons from Eight Years of Operational Data from a Continuous Integration Service: An Exploratory Case Study of CircleCI.<br> Keheliya Gallaba, <strong>Maxime Lamothe</strong>, and Shane McIntosh.<br><em>Published in: The 44th International Conference on Software Engineering (ICSE) 2022</em>. <a title="ICSE2022_gallaba" href="./assets/papers/kgallaba_icse_2022.pdf" target="_blank"><u>Pre-Print</u></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="row">
-          <div class="col-xl">
-            <h3 class="resume-title">2021</h3>
-            <div class="resume-item pb-0">
-
-              <h4>Journals</h4>
-			  
-			  <p>Assisting Example-based API Misuse Detectionvia Complementary Artificial Examples.<br><strong>Maxime Lamothe</strong>, Heng Li, and Weiyi Shang.<br><em>Accepted to: IEEE Transactions on Software Engineering (TSE)</em> <a title="TSE_MISUSES_MAX" href="https://users.encs.concordia.ca/home/s/shang/pubs/Max_TSE_2021.pdf" target="_blank"><u>Pre-Print</u></a></p>
-			  
-			  <p>Evaluating the impact of falsely detected performance bug-inducing changes in JIT models.<br>Sophia Quach, <strong>Maxime Lamothe</strong>, Bram Adams, Yasutaka Kamei, and Weiyi Shang.<br><em>Accepted to: Empirical Software Engineering An International Journal (EMSE)</em><a title="EMSE_EvaluatingPerfBugs_SOPHIA" href="https://users.encs.concordia.ca/~shang/pubs/Quach2021_Article_EvaluatingTheImpactOfFalselyDe.pdf" target="_blank"><u>Pre-Print</u></a></p>
-			  
-			  <p>An Empirical Study on the Use of SZZ for Identifying Inducing Changes of Non-functional Bugs.<br>Sophia Quach, <strong>Maxime Lamothe</strong>, Yasutaka Kamei, and Weiyi Shang.<br><em>Accepted to: Empirical Software Engineering An International Journal (EMSE) </em><a title="EMSE_INDUCING_SOPHIA" href="https://users.encs.concordia.ca/home/s/shang/pubs/Quach2021_Article_AnEmpiricalStudyOnTheUseOfSZZF.pdf" target="_blank"><u>Pre-Print</u></a></p>
-			  
-			  <p>A Systematic Review of API Evolution Literature.<br><strong>Maxime Lamothe</strong>, Yann-Gaël Guéhéneuc, and Weiyi Shang.<br><em>Accepted to: ACM Computing Surveys (CSUR)</em>. <a title="CSUR_MAX" href="./assets/papers/mlamothe_csur_2021.pdf" target="_blank"><u>Pre-Print</u></a></p>
-	      <div class="resume-item">
-              <h4>Conferences</h4>
-                <p>Is Historical Data an Appropriate Benchmark for Reviewer Recommendation Systems? A Case Study of the Gerrit Community. <br>Ian X. Gauthier, <strong>Maxime Lamothe</strong>, Gunter Mussbacher, and Shane McIntosh.<br><em> Accepted at The International Conference on Automated Software Engineering 2021</em>. <a title="ASE_gauthier" href="https://rebels.cs.uwaterloo.ca/papers/ase2021_gauthier.pdf" target="_blank"><u>Pre-Print</u></a></p>
-  
-                <p>Assessing the Exposure of Software Changes: The DiPiDi Approach. <br>Mehran Meidani, <strong>Maxime Lamothe</strong> and Shane McIntosh.<br><em> Accepted at The Mining Software Repositories (MSR) conference (MSR REGISTERED REPORT TRACK) 2021</em>. <a title="MSR_REGISTERED_MEHRAN" href="https://arxiv.org/abs/2104.00725" target="_blank"><u>Pre-Print</u></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl">
-            <h3 class="resume-title">2020</h3>
-            <div class="resume-item pb-0">
-
-              <h4>Journals</h4>
-              <p>A3: Assisting Android API Migrations Using Code Examples.<br> <strong>Maxime Lamothe</strong>, Weiyi Shang, and Tse-Hsun Chen.<br><em>Published in: IEEE Transactions on Software Engineering (TSE) 2020</em>. <a title="TSE2020_MAX" href="./assets/papers/mlamothe_tse_2020.pdf" target="_blank"><u>Pre-Print</u></a></p>
-	      <div class="resume-item">
-              <h4>Conferences</h4>
-                <p>When APIs are Intentionally Bypassed: An Exploratory Study of API Workarounds.<br> <strong>Maxime Lamothe</strong> and Weiyi Shang.<br><em>Published in: The 42nd International Conference on Software Engineering (ICSE) 2020</em>. <a title="ICSE2020_MAX" href="./assets/papers/mlamothe_icse_2020.pdf" target="_blank"><u>Pre-Print</u></a></p>
-                <p>Bridging the Divide Between API Users and API Developers by Mining Public Code repositories.<br> <strong>Maxime Lamothe</strong>.<br><em>Published in: The 42nd International Conference on Software Engineering Doctoral Symposium (ICSE-DS) 2020</em>. <a title="ICSE2020_MAX" href="./assets/papers/mlamothe_icseDS_2020.pdf" target="_blank"><u>Pre-Print</u></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl">
-            <h3 class="resume-title">2018</h3>
-            <div class="resume-item">
-
-              <h4>Conferences</h4>
-              <p>Exploring the Use of Automated API Migrating Techniques in Practice: An Experience Report on Android. <br> <strong>Maxime Lamothe</strong> and Weiyi Shang.<br><em>Published in: The 15th International Conference on Mining Software Repositories (MSR) 2018</em>. <a title="MSR2018_MAX" href="https://users.encs.concordia.ca/~shang/pubs/MSR2018_MAX.pdf" target="_blank"><u>PDF</u></a></p>
-            
-          </div>
+        <div>
+          <h2>Recent papers</h2>
+          <ul class="mini-pubs" id="recent-pubs"></ul>
+          <p class="hero-actions"><a class="btn" href="publications.html">All publications</a></p>
         </div>
       </div>
-    </section><!-- End Resume Section -->
+    </section>
+  </main>
 
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Academic Services</h2>
-        </div>
-
-        <div class="row mb">
-          <div class="col-lg-6 mb-5">
-            <h3 class="resume-title">Reviewer</h3>
-            <div class="resume-item pb-0">
-			  <h4 class="resume-title">Journals</h4>
-				<h5>Transactions on Software Engineering (TSE)</h5>
-				<h5>Empirical Software Engineering (EMSE)</h5>
-                <h5>Journal of Systems and Software (JSS)</h5>
-              <h4 class="resume-title">2022</h4>
-				<h5>MSR Technical papers track</h5>
-				<h5>SANER Tool papers-track</h5>
-              <h4 class="resume-title">2021</h4>
-				<h5>ESEC/FSE Demonstrations-track</h5>
-				<h5>ESEC/FSE Artifacts-track</h5>
-				<h5>ASE Artifacts-track</h5>
-            </div>
-          </div>
-          <div class="col-lg-6">
-          <h3 class="resume-title">Sub-Reviewer</h3>
-            <div class="resume-item">
-              <h4 class="resume-title">2020</h4>
-                <h5>ICPE, ICSE, ICSME, SANER</h5>
-              <h4 class="resume-title">2019</h4>
-                <h5>SANER, JSS</h5>
-              <h4 class="resume-title">2018</h4>
-                <h5>ICSME, ICPE, SANER</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
- 
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>You can contact me either by using the Linkedin link on this page, or by email through the email presented below.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>2500, Chemin de Polytechnique, Montreal, QC, Canada, H3T1J4 </p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>maxime.lamothe{at}polymtl{dot}ca</p>
-              </div>
-
-
-            </div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.265131383862!2d-73.61693928444123!3d45.5047411791015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9198ce22ed24d%3A0x733df471f5d54536!2sPavillons%20Pierre-Lassonde%20et%20Claudette%20McKay-Lassonde%2C%202500%20Chem.%20de%20Polytechnique%2C%20Montreal%2C%20QC%20H3T%201J4!5e0!3m2!1sen!2sca!4v1628687135616!5m2!1sen!2sca" width="800" height="450" style="border:0;" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
-          </div>
-
-          
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
+  <span class="ribbon" aria-hidden="true"></span>
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Maxime Lamothe</span>
+      <a href="#main">Back to top</a>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="./assets/vendor/jquery/jquery.min.js"></script>
-  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="./assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="./assets/vendor/counterup/counterup.min.js"></script>
-  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="./assets/vendor/venobox/venobox.min.js"></script>
-  <script src="./assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="./assets/vendor/typed.js/typed.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="./assets/js/main.min.js"></script>
-
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/site.js"></script>
 </body>
-
 </html>

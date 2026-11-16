@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Maxime Lamothe</title>
+  <meta name="author" content="Maxime Lamothe">
+  <meta name="description" content="Research themes of Maxime Lamothe: performance and tracing, LLMs for software engineering, engineering ML systems, code review and CI, API evolution.">
+  <meta property="og:title" content="Maxime Lamothe">
+  <meta property="og:description" content="Assistant professor, Polytechnique Montréal. Software performance, tracing, and AI for software engineering. Member of the DORSAL lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lamothemax.github.io/assets/img/max.jpg">
+
+  <link rel="icon" href="./assets/img/Max.svg">
+  <link rel="apple-touch-icon" href="./assets/img/Max.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./assets/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html">Maxime Lamothe</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="dorsal.html">DORSAL</a>
+        <a href="research.html" class="on" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <span class="ribbon" aria-hidden="true"></span>
+
+    <section class="section" id="research">
+      <div class="wrap">
+        <h1 class="page-title">Research</h1>
+        <p class="section-lede">Five threads run through the group's work. Each card opens the matching papers.</p>
+
+        <div class="cards">
+          <article class="card t-perf">
+            <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M3 34h58"/><rect x="6" y="6" width="22" height="6" rx="2"/><rect x="18" y="16" width="30" height="6" rx="2"/><rect x="36" y="26" width="22" height="6" rx="2"/></svg>
+            <h3>Performance and tracing</h3>
+            <p>Finding where time goes in systems too large to watch by hand: trace optimization, performance regressions at the method level, root-cause analysis in microservices, and GPU benchmarking.</p>
+            <a class="more" href="publications.html?topic=perf"><span data-count="perf"></span></a>
+          </article>
+
+          <article class="card t-ai">
+            <svg viewBox="0 0 64 40" aria-hidden="true"><circle cx="12" cy="20" r="6"/><circle cx="34" cy="8" r="5"/><circle cx="34" cy="32" r="5"/><circle cx="54" cy="20" r="6"/><path d="M17 17l12-7M17 23l12 7M39 10l10 7M39 30l10-7"/></svg>
+            <h3>LLMs for software engineering</h3>
+            <p>Putting language models to work on real engineering tasks and measuring what comes out: multi-agent refactoring, log analysis on private data, generated review comments, and text-to-SQL evaluation.</p>
+            <a class="more" href="publications.html?topic=ai"><span data-count="ai"></span></a>
+          </article>
+
+          <article class="card t-ml">
+            <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34h56M4 34V4"/><path d="M8 28c8-2 10-16 18-16s8 12 16 10 8-12 16-14"/></svg>
+            <h3>Engineering ML systems</h3>
+            <p>Machine-learning software is still software, but it breaks and ages in its own ways. We study its exceptions, its bugs, how it gets refactored, and how to plan defect reduction.</p>
+            <a class="more" href="publications.html?topic=ml"><span data-count="ml"></span></a>
+          </article>
+
+          <article class="card t-review">
+            <svg viewBox="0 0 64 40" aria-hidden="true"><circle cx="10" cy="20" r="5"/><circle cx="32" cy="20" r="5"/><circle cx="54" cy="20" r="5"/><path d="M15 20h12M37 20h12"/><path d="M29 20l2 2 4-5"/></svg>
+            <h3>Code review and CI</h3>
+            <p>How changes get reviewed, built and shipped: reviewer recommendation and its risks, how review feedback evolves, and whether CI acceleration can be trusted.</p>
+            <a class="more" href="publications.html?topic=review"><span data-count="review"></span></a>
+          </article>
+
+          <article class="card t-api">
+            <svg viewBox="0 0 64 40" aria-hidden="true"><rect x="4" y="8" width="22" height="24" rx="3"/><rect x="38" y="8" width="22" height="24" rx="3"/><path d="M26 16h12M26 24h12"/></svg>
+            <h3>API evolution</h3>
+            <p>Where I started: how APIs change, how their users cope through migrations and workarounds, and how examples mined from public code can help both sides.</p>
+            <a class="more" href="publications.html?topic=api"><span data-count="api"></span></a>
+          </article>
+
+          <article class="card project">
+            <p class="eyebrow">Applied project</p>
+            <h3>VILLE_IA</h3>
+            <p>Ethical, sovereign AI that brings climate data together in one place so that Québec municipalities can assess their vulnerabilities and build resilience to climate change. Covered in <em>Le Devoir</em>, May 2026.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <span class="ribbon" aria-hidden="true"></span>
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Maxime Lamothe</span>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/site.js"></script>
+</body>
+</html>

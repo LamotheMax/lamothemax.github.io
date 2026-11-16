@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Maxime Lamothe</title>
+  <meta name="author" content="Maxime Lamothe">
+  <meta name="description" content="Publications of Maxime Lamothe, searchable by topic and type.">
+  <meta property="og:title" content="Maxime Lamothe">
+  <meta property="og:description" content="Assistant professor, Polytechnique Montréal. Software performance, tracing, and AI for software engineering. Member of the DORSAL lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lamothemax.github.io/assets/img/max.jpg">
+
+  <link rel="icon" href="./assets/img/Max.svg">
+  <link rel="apple-touch-icon" href="./assets/img/Max.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./assets/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html">Maxime Lamothe</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="dorsal.html">DORSAL</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html" class="on" aria-current="page">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <span class="ribbon" aria-hidden="true"></span>
+
+    <section class="section" id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <h1 class="page-title">Publications</h1>
+          <p><span id="pub-count"></span> · also on <a href="https://scholar.google.com/citations?user=N-SSIvIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+        </div>
+
+        <div class="filters">
+          <input id="pub-search" type="search" placeholder="Search titles, authors, venues" aria-label="Search publications">
+          <div class="chips" id="topic-filters" role="group" aria-label="Filter by topic"></div>
+          <div class="chips" id="kind-filters" role="group" aria-label="Filter by type"></div>
+        </div>
+
+        <div id="pub-list"></div>
+        <noscript><p>The publication list needs JavaScript. You can also find it on <a href="https://scholar.google.com/citations?user=N-SSIvIAAAAJ&hl=en">Google Scholar</a>.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <span class="ribbon" aria-hidden="true"></span>
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Maxime Lamothe</span>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/site.js"></script>
+</body>
+</html>
